@@ -5,7 +5,7 @@ services:
     runtime: docker
     rootDir: frontend
     healthCheckPath: /
-- type: web
+  - type: web
     name: backend
     runtime: docker
     rootDir: backend
