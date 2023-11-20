@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Poke";
+  src: local("Poke"), url(../fonts/PressStart2P-Regular.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.app-poke-container img {
+  width: 300px;
+}
+
+.baseContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.outherContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fightContainer {
+  background-color: aliceblue;
+  width: 500px;
+  height: 400px;
+  position: relative;
+}
+
+.fightContainer img {
+  width: 200px;
+}
+.pokeContainer3v3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgContainer3v3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playerContainer3v3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+.contentContainer3v3 {
+  display: flex;
+  justify-content: center;
+}
+.outherContainer3v3 {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.iconContainer3v3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.bar {
+  border-left: 8px solid yellow;
+  height: 16px;
+  z-index: 1;
+  position: relative;
+  left: -12px;
+  top: 2px;
+}
+
+.singleBarContainer {
+  border-left: 16px solid black;
+  height: 20px;
+}
+.barContainer {
+  display: flex;
+  margin-left: 0.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.winnerBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.winnerPokeContainer {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.winnerImg {
+  width: 130px;
+}
+.imgContainer1v1 {
+  position: absolute;
+}

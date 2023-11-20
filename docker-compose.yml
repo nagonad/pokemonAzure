@@ -1,0 +1,13 @@
+version: '3.4'
+services:
+  frontend:
+    image: react-app
+    ports:
+      - '8000:80'
+  backend:
+    image: pokemon_api
+    ports:
+      - "5000:5000"
+    environment:
+    - MONGO_URI = "mongodb+srv://nagonad:st081301003@pokemon.kvw0oiv.mongodb.net/"
+    - PORT = 5000
