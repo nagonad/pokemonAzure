@@ -1,14 +1,16 @@
 services:
   - name: frontend
+    type: web
     env: docker
     buildCommand: docker build -t $RENDER_IMAGE_NAME -f frontend/Dockerfile .
     startCommand: docker run -p 80:80 $RENDER_IMAGE_NAME
     healthCheckPath: /
 
   - name: backend
+    type: web
     env: docker
     buildCommand: docker build -t $RENDER_IMAGE_NAME -f backend/Dockerfile .
-    startCommand: docker run -p 5000:5000 $RENDER_IMAGE_NAME
+    startCommand: docker run -p 8080:8080 $RENDER_IMAGE_NAME
     healthCheckPath: /
 
 buildCommand:
